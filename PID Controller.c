@@ -5,7 +5,7 @@
 #define TARGET 1000
 #define DELAY 0.1
 
-#define KP 0.55
+#define KP 0.6
 #define KI 0.2
 #define KD 0.3
 #define DT 2.25
