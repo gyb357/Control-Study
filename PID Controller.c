@@ -10,7 +10,7 @@
 #define KD 0.3
 #define DT 2.25
 
-float stdPIDF(float feedback);
+float PIDF(float feedback);
 void loop(float num);
 
 int main() {
@@ -21,7 +21,7 @@ int main() {
 	return 0;
 }
 
-float stdPIDF(float feedback) {
+float PIDF(float feedback) {
 	float P, I, D;
 	float error, preverror, control;
 	
@@ -44,7 +44,7 @@ void loop(float num) {
 	
 	while (num != TARGET) {
 		count++;
-		num = stdPIDF(num);
+		num = PIDF(num);
 		error = TARGET - num;
 		
 		printf("Control = %f, Error = %f\n", num, error);
