@@ -10,7 +10,6 @@
 #define KQ 50
 #define KR 10000
 
-float stdKalman(float random);
 float Random();
 
 int main() {
